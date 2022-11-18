@@ -81,7 +81,7 @@ xlabel('x'); legend({'u_x','u_x approx'});
 
 subplot(2,2,[3 4]); 
 plot(x,vxxAna(x),'-',x,vxx,'.'); 
-xlabel('x'); legend({'v_xx','v_xx approx'});
+xlabel('x'); legend({'v_{xx}','v_{xx} approx'});
 
 %% Question 4
 
@@ -108,7 +108,7 @@ end
 % Plot errors and O(n^-2) function
 figure;
 loglog(nxVals,errValsDx,'.-',nxVals,errValsDxx,'.-',nxVals,nxVals.^(-2),'-');
-xlabel('n'); legend({'Error ux','Error uxx','1/n^2'});
+xlabel('n'); legend({'Error u_x','Error v_{xx}','1/n^2'});
 
 %% Question 6
 % See AllenCahn.m
